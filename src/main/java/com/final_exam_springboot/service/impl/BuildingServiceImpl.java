@@ -96,7 +96,7 @@ public class BuildingServiceImpl implements IBuildingService {
         if (updateRequestDTO.getBuildingArea() != null) {
             buildingToUpdate.setBuildingArea(updateRequestDTO.getBuildingArea());
         }
-        if (updateRequestDTO.getAreaUnit() != null) {
+        if (updateRequestDTO.getAreaUnit() != null && !updateRequestDTO.getAreaUnit().isBlank()) {
             buildingToUpdate.setAreaUnit(updateRequestDTO.getAreaUnit());
         }
         if (updateRequestDTO.getStartDate() != null) {
@@ -105,10 +105,10 @@ public class BuildingServiceImpl implements IBuildingService {
         if (updateRequestDTO.getTime() != null) {
             buildingToUpdate.setTime(updateRequestDTO.getTime());
         }
-        if (updateRequestDTO.getTimeUnit() != null) {
+        if (updateRequestDTO.getTimeUnit() != null && !updateRequestDTO.getTimeUnit().isBlank()) {
             buildingToUpdate.setTimeUnit(updateRequestDTO.getTimeUnit());
         }
-        if (updateRequestDTO.getContent() != null) {
+        if (updateRequestDTO.getContent() != null && !updateRequestDTO.getContent().isBlank()) {
             buildingToUpdate.setContent(updateRequestDTO.getContent());
         }
         if (updateRequestDTO.getDesign() != null && !updateRequestDTO.getDesign().isEmpty()) {

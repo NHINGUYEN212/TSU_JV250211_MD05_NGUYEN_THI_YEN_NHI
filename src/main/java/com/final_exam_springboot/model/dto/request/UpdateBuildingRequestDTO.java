@@ -15,19 +15,14 @@ public class UpdateBuildingRequestDTO {
 
     private String buildingName;
 
-
     private Double buildingArea;
-
 
     private String areaUnit;
 
-
     private LocalDate startDate;
-
 
     @Min(value = 1, message = "Thoi gian phai lon hon 0")
     private Integer time;
-
 
     private String timeUnit;
 
